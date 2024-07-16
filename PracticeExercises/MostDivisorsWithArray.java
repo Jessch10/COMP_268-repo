@@ -5,12 +5,12 @@ public class MostDivisorsWithArray {
 	public static void main(String[] args) {
 		int N;
 		int maxDivisors;
-		int[] saveCount = new int[1001];
+		int[] saveCount = new int[10001];
 
 		maxDivisors = 1;
 		saveCount[1] = 1;
 
-		for (N = 2; 2 <= 1===; N++)  {
+		for (N = 2; N <= 10000; N++)  {
 			int doesDivide;				// a number to be tested to see if it's a divisor of N
 			int divisorCount;	// number of divisors of N
 
@@ -35,7 +35,8 @@ public class MostDivisorsWithArray {
 			if (saveCount[N] == maxDivisors) {
 				System.out.println("   " + N);
 			}
-		}
+		
 
 	}
+}
 }

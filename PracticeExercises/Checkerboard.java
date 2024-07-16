@@ -29,15 +29,14 @@ public class Checkerboard extends Application {
 
 		for ( row = 0; row < 8; row++) {
 
-			for ( col = 0; column < 8; column++)  {
-				x = col * 50;
+			for ( column = 0; column < 8; column++)  {
+				x = column * 50;
 				y = row * 50;
-				if ( (row % 2) == (col % 2))  {
+				if ( (row % 2) == (column % 2))  
 					g.setFill(Color.RED);
 				else 
 					g.setFill(Color.BLACK);
-				g.fillRect(x, y, 50, 50);
-				}
+				g.fillRect(x, y, 50, 50);			
 			}
 		}
 		/* g.setFill(Color.WHITE);

@@ -28,18 +28,23 @@ public class BirthdayProblem {
 		 		int birthday;	// The seleceted birthday.
 		 		birthday = (int)(Math.random()*365);
 		 		count++;
+		 		int threeTimes = 0; 
 
 		 		System.out.printf("Person %d has the same birthday number %d%n", count, birthday);
-
-		 		if ( used[birthday]) {
-		 				// This day was found before; it's a diplicate. We are done.
-		 			break;
-		 		}
+		 		while (threeTimes <= 3)	{
+			 		if ( used[birthday]) {
+			 				// This day was found before; it's a diplicate. We are done.
+			 			threeTimes++;
+			 			System.out.println(threeTimes);
+			 			break;
+			 		} 
+		 		} 
 		 		used[birthday] = true;
+
 
 		 } // End of while loop
 
-		 System.out.println();
-		 System.out.println("A duplicate birthday was found after" + count + "tries.");
+		 //System.out.println();
+		 //System.out.println("A duplicate birthday was found after" + count + "tries.");
 	}
 }

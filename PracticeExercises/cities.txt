@@ -1,0 +1,3 @@
+calgary:12345.12
+denver:34535.87
+edmonton:78323.98
